@@ -92,7 +92,7 @@ function SearchPhoto(pgno1) {
                         <div class="pic">
                         <img src="${photo.urls.regular}" >
                         <a href="${photo.links.download}" target="_blank"><img src="icon/downloadw.png"></a>
-                        <p>💚${photo.likes}</p>
+                        <p>❤️${photo.likes}</p>
                         </div
                         `
                         $("#images").append(result);
