@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    background-color: whitesmoke;
+    font-family: poppins;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    height: auto;
+    background: linear-gradient(to top left, #30b4f5 , #39f3bb   );
+    color: white;
+}
+header .logo img{
+    width: 11pc;
+}
+header .menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .menu ul li{
+    padding: 1pc;
+}
+header .menu ul li a{
+    color: white;
+}
+.search_container{
+    
+    margin-top: 2pc;
+    width: 100%;
+    text-align: center;
+}
+.search_container input{
+    border-radius: 10pc;
+
+    border: 2px solid gray;
+   
+    width: 30pc;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    padding: 10px;
+    font-size: 1pc;
+    outline: none;
+}
+.search_container button{
+    background: linear-gradient(to top left, #30b4f5 , #39f3bb   );
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    font-size: 1pc;
+    color: white;
+    padding: 10px;
+    width: auto;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius:10pc;
+    cursor: pointer;
+}
+/* -------------Theme----------------- */
+
+.theme{
+    display: flex;
+    justify-content: end;
+}
+.theme img{
+    transform: rotate(180deg);
+    background-color: black;
+    border-radius: 100pc;
+    width: 2pc;
+    margin: 1pc;
+}
+
+/*----------Search Result----------------- */
+.result{
+    padding:20px;
+    margin-top: 4pc;
+}
+.result #images{
+
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.result .total{
+    padding-left: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.result #images .pic{
+    margin: 2pc;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.result #images .pic a{
+    position:  absolute;
+    top: 22pc;
+    left:0pc;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background: linear-gradient(to top left, #30b4f5 , #39f3bb   );
+  border-radius: 10pc;
+  padding: 10px;
+  margin-top: 1pc;
+
+  
+}
+.result #images .pic  a img{
+    width: 2pc;
+    height: 1.8pc;
+    border-radius: 0px;
+}
+.result #images .pic p{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 1pc;
+    position: absolute;
+    top: 23pc;
+    right: -15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    text-align: right;
+}
+
+.result #images img{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 10px;
+    height: 25pc;
+    width: 20pc;
+    transition: .5s;
+
+}
+.result #images img:hover{
+    transform: scale(1.1);
+    
+    
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.result #images #msg{
+    color: grey;
+}
+/* --------Next Prev----------- */
+.prevnext{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prevnext img{
+    background: linear-gradient(to top left, #30b4f5 , #39f3bb   );
+    border-radius: 10pc;
+    width: 2.5pc;
+    margin: 1pc;
+}
+
+/*---------------- Media Query ----------------- */
+@media (max-width:616px) {
+    .search_container input{
+       
+        width: 25pc;
+       
+    }
+    .search_container button{
+        margin-top: 2pc;
+    }
+   
+  }
+@media (max-width:440px){
+    .search_container input{
+       
+        width: 20pc;
+       
+    }
+    header .logo img{
+        width: 8pc;
+    }
+}
+@media (max-width:809px){
+    .result #images img{
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        border-radius: 10px;
+        height: 20pc;
+        width: 15pc;
+        transition: .5s;
+    
+    }
+    .result #images .pic p{
+        top: 18pc;
+    }
+    .result #images .pic a{
+        top:17pc;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <title>PICSAVE</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+           <img src="Logo/PicsArt_05-15-02.27.45.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="Download.html">How To Download?</a></li>
+            
+            </ul>
+        </div>
+    
+    </header>
+
+
+    <div class="theme">
+        <img src="icon/dark.png" alt="" id="black">
+    </div>
+
+    <div class="search_container" id="top">
+<h2>Search Images</h2>
+<br>
+        <input type="text" name="text" id="search" >
+        <button id="searchbtn" onclick="SearchPhoto(1)"><i class="fas fa-search"></i>Search</button>
+    </div>
+
+    <div class="result">
+
+        <div class="total">
+            <h3 id="totalimg" class="bw"></h3>
+        </div>
+        <div id="images">
+         
+
+
+        </div>
+        <div class="prevnext">
+            <img src="icon/prev.png" alt="prev" id="prev">
+            <h3 id="pageno" class="bw"></h3>
+            <img src="icon/next.png" alt="next" id="next">
+        </div>
+
+    </div>
+
+    <a href="#top" id="topscroll">▲</a>
+
+   
+
+    <script src="js/JqueryFile.js"></script>
+    <script src="js/index.js" ></script>
+
+</body>
+</html>
