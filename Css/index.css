@@ -34,6 +34,7 @@ header .menu ul li{
 }
 header .menu ul li a{
     color: white;
+    text-decoration: none;
 }
 .search_container{
     
@@ -64,6 +65,12 @@ header .menu ul li a{
     padding: 10px 20px;
     border-radius:10pc;
     cursor: pointer;
+}
+.search_container p a{
+
+    color: #30b4f5;
+    text-decoration: none;
+    
 }
 /* -------------Theme----------------- */
 
@@ -178,6 +185,7 @@ header .menu ul li a{
     }
    
   }
+
 @media (max-width:440px){
     .search_container input{
        
@@ -190,11 +198,10 @@ header .menu ul li a{
 }
 @media (max-width:809px){
     .result #images img{
-        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-        border-radius: 10px;
+    
         height: 20pc;
         width: 15pc;
-        transition: .5s;
+       
     
     }
     .result #images .pic p{
@@ -204,3 +211,4 @@ header .menu ul li a{
         top:17pc;
     }
 }
+

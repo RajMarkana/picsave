@@ -91,7 +91,7 @@ function SearchPhoto(pgno1) {
                         
                         <div class="pic">
                         <img src="${photo.urls.regular}" >
-                        <a href="${photo.links.download}" target="_blank"><img src="icon/downloadw.png"></a>
+                        <a href="${photo.links.download}&force=true"><img src="icon/downloadw.png"></a>
                         <p>❤️${photo.likes}</p>
                         </div
                         `
@@ -133,6 +133,7 @@ function SearchPhoto(pgno1) {
 
         if ($('#images').is(':empty')){
            
+            $("#totalimg").hide();
            
             if (search == ""){
                 let empty = `
@@ -142,7 +143,6 @@ function SearchPhoto(pgno1) {
                 $("#images").append(empty);     
             }
             else{
-                $("#totalimg").hide();
 
                 let empty = `
                     <h1 id="msg" class="bw">`+ search +` Not Found...!🧐</h1>
