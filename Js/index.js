@@ -92,6 +92,7 @@ function SearchPhoto(pgno1) {
                         <div class="pic">
                         <img src="${photo.urls.regular}" >
                         <a href="${photo.links.download}&force=true"><img src="icon/downloadw.png"></a>
+                        <p class="author">By ${photo.user.name}</p>
                         <p>❤️${photo.likes}</p>
                         </div
                         `
@@ -156,10 +157,14 @@ function SearchPhoto(pgno1) {
     
 
         $(".pic a").hide();
-        $(".pic").click(function (e) { 
+        $(".pic .author").hide();
+        $(".pic").hover(function (e) { 
         $(".pic a").hide();
+        $(".pic .author").hide();
 
-            $(this).find("a").slideDown();
+            $(this).find("a").fadeIn();
+            $(this).find(".author").fadeIn();
+
             
         });
 

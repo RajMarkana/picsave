@@ -115,7 +115,7 @@ header .menu ul li a{
 .result #images .pic a{
     position:  absolute;
     top: 22pc;
-    left:0pc;
+    left:-1pc;
   text-decoration: none;
   text-align: center;
   color: white;
@@ -131,6 +131,9 @@ header .menu ul li a{
     height: 1.8pc;
     border-radius: 0px;
 }
+.result #images .pic  a img:hover{
+    filter: none;
+}
 .result #images .pic p{
     background-color: white;
     padding: 10px 15px;
@@ -141,7 +144,18 @@ header .menu ul li a{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
     text-align: right;
 }
+.result #images .pic .author{
+    font-size: 12px;
+    position: absolute;
+    top: -1pc;
+    right: -1pc;
+    background: linear-gradient(to top left, #30b4f5 , #39f3bb   );
 
+    color: white;
+    border-radius: 10pc;
+
+    
+}
 .result #images img{
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     border-radius: 10px;
@@ -151,7 +165,7 @@ header .menu ul li a{
 
 }
 .result #images img:hover{
-    transform: scale(1.1);
+    filter: blur(2px);
     
     
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
