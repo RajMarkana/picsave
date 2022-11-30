@@ -90,11 +90,14 @@ function SearchPhoto(pgno1) {
                         let result =`
                         
                         <div class="pic">
+
                         <img src="${photo.urls.regular}" >
-                        <a href="${photo.links.download}&force=true"><img src="icon/downloadw.png"></a>
-                        <p class="author">By ${photo.user.name}</p>
-                        <p>❤️${photo.likes}</p>
-                        </div
+
+                                <a href="${photo.links.download}&force=true"><img src="icon/downloadw.png"></a>
+                        
+                                <b>❤️${photo.likes}</b>
+                         
+                        </div>
                         `
                         $("#images").append(result);
                         

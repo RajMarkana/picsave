@@ -10,6 +10,20 @@ body{
     background-color: whitesmoke;
     font-family: poppins;
 }
+::-webkit-scrollbar{
+    width: 14px;
+    height: 14px;
+}
+::webkit::-webkit-scrollbar-track{
+    border-radius: 4pc;
+  
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10pc;
+    height: 15pc;
+    background: linear-gradient(to top left, #39f3bb, #30b4f5   );
+
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -111,11 +125,12 @@ header .menu ul li a{
     display: flex;
     flex-direction: column;
     position: relative;
+    
 }
 .result #images .pic a{
     position:  absolute;
-    top: 22pc;
-    left:-1pc;
+    top: 17pc;
+    right:5.2pc;
   text-decoration: none;
   text-align: center;
   color: white;
@@ -127,52 +142,46 @@ header .menu ul li a{
   
 }
 .result #images .pic  a img{
-    width: 2pc;
-    height: 1.8pc;
+    width: 1.8pc;
+    height: 1.6pc;
     border-radius: 0px;
 }
 .result #images .pic  a img:hover{
     filter: none;
 }
-.result #images .pic p{
+.result #images .pic b{
     background-color: white;
     padding: 10px 15px;
-    border-radius: 1pc;
+    border-radius: 10pc;
     position: absolute;
-    top: 23pc;
+    top: 18pc;
     right: -15px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
     text-align: right;
+    background: rgba(255, 255, 255, .7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
 }
-.result #images .pic .author{
-    font-size: 12px;
-    position: absolute;
-    top: -1pc;
-    right: -1pc;
-    background: linear-gradient(to top left, #30b4f5 , #39f3bb   );
 
-    color: white;
-    border-radius: 10pc;
-
-    
-}
 .result #images img{
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     border-radius: 10px;
-    height: 25pc;
-    width: 20pc;
+    height: 20pc;
+    width: 25pc;
     transition: .5s;
 
 }
 .result #images img:hover{
-    filter: blur(2px);
+
     
     
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .result #images #msg{
     color: grey;
 }
+
 /* --------Next Prev----------- */
 .prevnext{
     text-align: center;
