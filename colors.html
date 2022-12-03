@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorS</title>
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="shortcut icon" href="logo/PicsArt_05-15-02.27.45.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+           <img src="logo/PicsArt_05-15-02.27.45.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Search</a></li>
+                <li><a href="random.html">Random</a></li>
+                <!-- <li><a href="Download.html">How To Download?</a></li> -->
+             
+            
+            </ul>
+        </div>
+    
+    </header>
+
+    <div class="color_maker">
+
+        <div class="color_container">
+            <div class="color">
+                <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h1>
+            </div>
+            <div class="color_info">
+              <h2 id="bgcolor"></h2>
+              <h2 id="fontcolor"></h2>
+            </div>
+
+        </div>
+        <div class="color_option">
+
+            <h3>Background Color</h3>
+            <label>Red</label><br>
+            <input type="range" min="0" max="255" value="0" id="red"><br>
+            <label>Gree</label><br>
+            <input type="range" min="0" max="255" value="0" id="green"><br>
+            <label>Blue</label><br>
+            <input type="range" min="0" max="255" value="0" id="blue">
+            <br>
+            <br>
+            <h3>Font Color</h3>
+            <label>Red</label><br>
+            <input type="range" min="0" max="255" value="255" id="red" class="f-r"><br>
+            <label>Gree</label><br>
+            <input type="range" min="0" max="255" value="255" id="green" class="f-g"><br>
+            <label>Blue</label><br>
+            <input type="range" min="0" max="255" value="255" id="blue" class="f-b">
+
+        </div>
+    </div>
+
+
+    <div class="toggle_btn">
+
+        <button id="solid_color">Solid Colors</button>
+        <button id="gradient_color">Gradient Colors</button>
+    </div>
+    
+
+
+
+    <div class="color_palettes_conatiner">
+
+        <div class="color_palettes_heading">
+            <h2>Solid Color Palettes</h2>
+        </div>
+
+        <div class="color_palettes">
+
+        </div>
+        <h2 style="text-align:center;margin-top: 1pc; color: rgb(20, 27, 23);cursor: pointer;" id="cload_more">Load More</h2>
+
+    </div>
+    <div class="gcolor_palettes_conatiner">
+
+        <div class="gcolor_palettes_heading">
+            <h2>Gradient Color Palettes</h2>
+        </div>
+
+        <div class="gcolor_palettes">
+
+        </div>
+        <h2 style="text-align:center;margin-top: 1pc; color: rgb(20, 27, 23);cursor: pointer;" id="gload_more">Load More</h2>
+
+    </div>
+
+    <script src="js/JqueryFile.js"></script>
+    <script src="js/colors.js" ></script>
+</body>
+</html>

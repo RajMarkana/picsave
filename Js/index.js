@@ -2,7 +2,9 @@ $(document).ready(function () {
    
     
     $("#totalimg").hide();
+   
     var i =0;
+   
     $("#black").click(function (e) { 
      
         if(i == 0){
@@ -91,7 +93,7 @@ function SearchPhoto(pgno1) {
                         
                         <div class="pic">
 
-                        <img src="${photo.urls.regular}" >
+                        <img src="${photo.urls.regular}" > 
 
                                 <a href="${photo.links.download}&force=true"><img src="icon/downloadw.png"></a>
                         
@@ -100,6 +102,10 @@ function SearchPhoto(pgno1) {
                         </div>
                         `
                         $("#images").append(result);
+
+                        //image url regular to full+ &w=700&h=300
+                        // download link midify as above
+
                         
                         
                         
