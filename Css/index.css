@@ -206,11 +206,7 @@ header .menu ul li a{
 
 /*---------------- Media Query ----------------- */
 @media (max-width:616px) {
-    .search_container .valinput input{
-       
-        width: 25pc;
-       
-    }
+   
     .search_container button{
         margin-top: 2pc;
     }
@@ -218,15 +214,12 @@ header .menu ul li a{
   }
 
 @media (max-width:440px){
-    .search_container .valinput input{
-       
-        width: 20pc;
-       
-    }
+  
     header .logo img{
         width: 8pc;
     }
 }
+
 
 @media (max-width:809px){
     .result #images .pic a {
@@ -239,10 +232,16 @@ header .menu ul li a{
     }
     .result #images img{
     
-        height:  17pc;
-        width: 22pc;    
+        height:  16pc;
+        width: 21pc;    
     
     }
    
+}
+@media(max-width:429px){
+    .search_container .valinput input{
+
+        width: 22pc;
+    }
 }
 
