@@ -1,57 +1,70 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
-    
+
+body {
+
     background-color: whitesmoke;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 14px;
     height: 14px;
 }
-::webkit::-webkit-scrollbar-track{
+
+::webkit::-webkit-scrollbar-track {
     border-radius: 4pc;
-  
-}
-::-webkit-scrollbar-thumb{
-    border-radius: 10pc;
-    height: 15pc;
-    background: linear-gradient(to top left, #39f3bb, #30b4f5   );
 
 }
-header{
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10pc;
+    height: 15pc;
+    background: linear-gradient(to top left, #39f3bb, #30b4f5);
+
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 20px;
     height: auto;
-    background: linear-gradient(to top left, #30b4f5 , #39f3bb   );
+    background: linear-gradient(to top left, #30b4f5, #39f3bb);
     color: white;
 }
-header .logo img{
+
+header .logo img {
     width: 11pc;
 }
-header .menu ul{
+
+header .menu ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-header .menu ul li{
+
+header .menu ul li {
     padding: 1pc;
 }
-header .menu ul li a{
+
+header .menu ul li a {
     color: white;
     text-decoration: none;
 }
-.search_container{
-    
+
+.search_container {
+
     margin-top: 2pc;
     width: 100%;
     text-align: center;
@@ -60,20 +73,22 @@ header .menu ul li a{
     align-items: center;
     flex-direction: column;
 }
-.search_container .valinput input{
+
+.search_container .valinput input {
     border-radius: 10pc;
 
     border: 2px solid gray;
-   
+
     width: 30pc;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     padding: 10px;
     font-size: 1pc;
     outline: none;
 }
-.search_container .valinput button{
+
+.search_container .valinput button {
     margin-top: 2pc;
-    background: linear-gradient(to top left, #30b4f5 , #39f3bb   );
+    background: linear-gradient(to top left, #30b4f5, #39f3bb);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     font-size: 1pc;
     color: white;
@@ -82,23 +97,25 @@ header .menu ul li a{
     border: none;
     outline: none;
     padding: 10px 20px;
-    border-radius:10pc;
+    border-radius: 10pc;
     cursor: pointer;
 }
 
-.search_container p a{
+.search_container p a {
 
     color: #30b4f5;
     text-decoration: none;
-    
+
 }
+
 /* -------------Theme----------------- */
 
-.theme{
+.theme {
     display: flex;
     justify-content: end;
 }
-.theme img{
+
+.theme img {
     transform: rotate(180deg);
     background-color: black;
     border-radius: 100pc;
@@ -108,11 +125,12 @@ header .menu ul li a{
 }
 
 /*----------Search Result----------------- */
-.result{
-    padding:20px;
+.result {
+    padding: 20px;
     margin-top: 4pc;
 }
-.result #images{
+
+.result #images {
 
 
     display: flex;
@@ -120,7 +138,8 @@ header .menu ul li a{
     align-items: center;
     flex-wrap: wrap;
 }
-.result .total{
+
+.result .total {
     padding-left: 80px;
     display: flex;
     justify-content: start;
@@ -128,36 +147,41 @@ header .menu ul li a{
     flex-wrap: wrap;
     color: grey;
 }
-.result #images .pic{
+
+.result #images .pic {
     margin: 2pc;
     display: flex;
     flex-direction: column;
     position: relative;
-    
-}
-.result #images .pic a{
-    position:  absolute;
-    top: 17pc;
-    right:5.2pc;
-  text-decoration: none;
-  text-align: center;
-  color: white;
-  background: linear-gradient(to top left, #30b4f5 , #39f3bb   );
-  border-radius: 10pc;
-  padding: 10px;
-  margin-top: 1pc;
 
-  
 }
-.result #images .pic  a img{
+
+.result #images .pic a {
+    position: absolute;
+    top: 17pc;
+    right: 5.2pc;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to top left, #30b4f5, #39f3bb);
+    border-radius: 10pc;
+    padding: 10px;
+    margin-top: 1pc;
+
+
+}
+
+.result #images .pic a img {
     width: 1.8pc;
     height: 1.6pc;
     border-radius: 0px;
 }
-.result #images .pic  a img:hover{
+
+.result #images .pic a img:hover {
     filter: none;
 }
-.result #images .pic b{
+
+.result #images .pic b {
     background-color: white;
     padding: 10px 15px;
     border-radius: 10pc;
@@ -171,8 +195,8 @@ header .menu ul li a{
     backdrop-filter: blur(1px);
 }
 
-.result #images img{
-    
+.result #images img {
+
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     border-radius: 10px;
     height: 20pc;
@@ -180,25 +204,28 @@ header .menu ul li a{
     transition: .5s;
 
 }
-.result #images img:hover{
 
-    
-    
+.result #images img:hover {
+
+
+
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
-.result #images #msg{
+
+.result #images #msg {
     color: grey;
 }
 
 /* --------Next Prev----------- */
-.prevnext{
+.prevnext {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.prevnext img{
-    background: linear-gradient(to top left, #30b4f5 , #39f3bb   );
+
+.prevnext img {
+    background: linear-gradient(to top left, #30b4f5, #39f3bb);
     border-radius: 10pc;
     width: 2.5pc;
     margin: 1pc;
@@ -206,42 +233,44 @@ header .menu ul li a{
 
 /*---------------- Media Query ----------------- */
 @media (max-width:616px) {
-   
-    .search_container button{
+
+    .search_container button {
         margin-top: 2pc;
     }
-   
-  }
 
-@media (max-width:440px){
-  
-    header .logo img{
+}
+
+@media (max-width:440px) {
+
+    header .logo img {
         width: 8pc;
     }
 }
 
 
-@media (max-width:809px){
+@media (max-width:809px) {
     .result #images .pic a {
         top: 14pc;
     }
-    .result #images .pic b{
+
+    .result #images .pic b {
 
         top: 15pc;
 
     }
-    .result #images img{
-    
-        height:  16pc;
-        width: 21pc;    
-    
+
+    .result #images img {
+
+        height: 16pc;
+        width: 21pc;
+
     }
-   
+
 }
-@media(max-width:429px){
-    .search_container .valinput input{
+
+@media(max-width:429px) {
+    .search_container .valinput input {
 
         width: 22pc;
     }
 }
-
