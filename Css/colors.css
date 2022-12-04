@@ -340,7 +340,10 @@ input[type=range]::-webkit-slider-thumb {
 
     .color h1 {
         width: fit-content;
-        font-size: 1pc;
+        font-size: 1.5pc;
+    }
+    .color_info h3{
+        font-size: 13px;
     }
 
     input[type=range] {
@@ -356,7 +359,7 @@ input[type=range]::-webkit-slider-thumb {
 
     .color h1 {
         width: fit-content;
-        font-size: .7pc;
+        font-size: 1.3pc;
     }
 
     input[type=range] {
