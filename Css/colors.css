@@ -333,7 +333,9 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 @media (max-width:498px) {
-
+    header .logo img {
+        width: 8pc;
+    }
     .color {
         width: 22pc;
     }
