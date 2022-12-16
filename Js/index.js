@@ -95,7 +95,7 @@ function SearchPhoto(pgno1) {
 
                         <img src="${photo.urls.regular}" > 
 
-                                <a href="${photo.links.download}&force=true"><img src="icon/downloadw.png"></a>
+                                <a href="${photo.links.download}&force=true"><img src="Icon/downloadw.png"></a>
                         
                                 <b>❤️${photo.likes}</b>
                          
