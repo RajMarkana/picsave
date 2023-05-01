@@ -65,7 +65,7 @@ function SearchPhoto(pgno1) {
     }
 
 
-    let id = "eI4ensPee7LiZ2boqvI_aFgzXRFdjyBTDJnClUEVkzI"
+    let id = "[YOUR API KEY]"
     let search = $("#search").val();
     let url = "https://api.unsplash.com/search/photos/?query=" + search + "&client_id=" + id + "&page=" + pgno + "&per_page=30";
 
