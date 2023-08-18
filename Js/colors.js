@@ -65,13 +65,17 @@ $(document).ready(function () {
 
 
     });
+    function rgbToHex(red, green, blue) {
+        const rgb = (red << 16) | (green << 8) | (blue << 0);
+        return '#' + (0x1000000 + rgb).toString(16).slice(1);
+      }
 
     function change_bgcolor() {
 
 
-        var bgcolor = `rgb(` + red + `,` + green + `,` + blue + `)`;
+        var bgcolor = rgbToHex(red,green,blue);
 
-
+        
         $(".color").css("background-color", bgcolor);
 
         $("#bgcolor").html(bgcolor);
@@ -79,7 +83,7 @@ $(document).ready(function () {
     function change_fcolor() {
 
 
-        var fontcolor = `rgb(` + redfont + `,` + greenfont + `,` + bluefont + `)`;
+        var fontcolor = rgbToHex(redfont,greenfont,bluefont);
 
 
         $(".color").css("color", fontcolor);

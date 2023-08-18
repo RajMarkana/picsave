@@ -66,6 +66,55 @@
     </div>
 
 
+  
+<div class="container_color_palette">
+    <h1><span style="color: #39f3bb;">Color</span> Palette Generator</h1>
+    
+    <div class="color-palette">
+      <div class="color-swatch" id="b1" style="background-color: #ff0000"><label id="lb1"></label></div>
+      <div class="color-swatch" id="b2" style="background-color: #00ff00"><label id="lb2"></label></div>
+      <div class="color-swatch" id="b3" style="background-color: #0000ff"><label id="lb3"></label></div>
+      <div class="color-swatch" id="b4" style="background-color: #000000"><label id="lb4"></label></div>
+    </div>
+    <button onclick="generateColorPalette()" id="genBtn">Generate</button>
+    
+</div>
+
+
+<script>
+function generateColorPalette() {
+  // Generate a random color palette of 3 colors.
+  var colors = [];
+  for (var i = 0; i < 4; i++) {
+    colors.push(Math.random().toString(16).substring(2, 8));
+    
+  }
+
+  
+    document.getElementById("b1").style.backgroundColor = "#"+colors[0]
+    document.getElementById("lb1").innerHTML = "#"+colors[0]
+    document.getElementById("b2").style.backgroundColor = "#"+colors[1]
+    document.getElementById("lb2").innerHTML = "#"+colors[1]
+    document.getElementById("b3").style.backgroundColor = "#"+colors[2]
+    document.getElementById("lb3").innerHTML = "#"+colors[2]
+    document.getElementById("b4").style.backgroundColor = "#"+colors[3]
+    document.getElementById("lb4").innerHTML = "#"+colors[3]
+    document.getElementById("b1").style.boxShadow =  "#"+colors[0]+" 0px 25px 20px -20px"
+    document.getElementById("b2").style.boxShadow =  "#"+colors[1]+" 0px 25px 20px -20px"
+    document.getElementById("b3").style.boxShadow =  "#"+colors[2]+" 0px 25px 20px -20px"
+    document.getElementById("b4").style.boxShadow =  "#"+colors[3]+" 0px 25px 20px -20px"
+    
+    
+    
+    
+    
+}
+
+// Generate the color palette on page load.
+generateColorPalette();
+</script>
+
+
     <div class="toggle_btn">
 
         <button id="solid_color">Solid Colors</button>
@@ -78,7 +127,7 @@
     <div class="color_palettes_conatiner">
 
         <div class="color_palettes_heading">
-            <h2>Solid Color Palettes</h2>
+            <h2><span style="color: #39f3bb;">Solid</span> Color Palettes</h2>
         </div>
 
         <div class="color_palettes">
@@ -91,7 +140,7 @@
     <div class="gcolor_palettes_conatiner">
 
         <div class="gcolor_palettes_heading">
-            <h2>Gradient Color Palettes</h2>
+            <h2><span style="color: #39f3bb;">Gradient</span> Color Palettes</h2>
         </div>
 
         <div class="gcolor_palettes">

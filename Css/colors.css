@@ -117,7 +117,7 @@ header .menu ul li a {
     background-color: white;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     padding: 10px;
-    border-radius: 2pc;
+    border-radius: 10px;
 }
 
 
@@ -369,4 +369,61 @@ input[type=range]::-webkit-slider-thumb {
         width: 250px;
     }
 
+}
+
+
+
+.container_color_palette{
+    margin-top: 4pc;
+    text-align: center;
+}
+.color-palette {
+
+  margin: 20px 0 20px 0;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  
+
+}
+
+.color-swatch {
+  width: 150px;
+  height: 200px;
+  
+  border-radius: 20px;
+  margin: 10px;
+  transition: .5s;
+  
+}
+#genBtn{
+    background: linear-gradient(to top left, #30b4f5, #39f3bb);
+    color: white;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+    position: relative;
+    box-shadow: #30b4f5 0px 25px 20px -20px;
+    bottom: -2pc;
+    cursor: pointer;
+}
+label{
+    
+    background-color: white;
+    padding: 4px;
+    display: none;
+    transition: .5s;
+}
+.color-swatch:hover label{
+    transition: .5s;
+    display: block;
+    width: fit-content;
+}
+#popup{
+  background-color: #3380f8;
+  border-radius: 10pc;
+  color:white;
+  padding: 13px;
 }

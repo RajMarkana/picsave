@@ -89,7 +89,7 @@ header .menu ul li a {
 .search_container .valinput button {
     margin-top: 2pc;
     background: linear-gradient(to top left, #30b4f5, #39f3bb);
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    box-shadow: #30b4f5 0px 25px 20px -20px;
     font-size: 1pc;
     color: white;
     padding: 10px;
