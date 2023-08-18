@@ -12,7 +12,7 @@ $(document).ready(function () {
             $("body").css("background-color", "#232b30");
             $(".search_container").css("color", "white");
             $(".bw").css("color", "whitesmoke");
-            $(".theme").find("img").attr("src", "icon/light.png");
+            $(".theme").find("img").attr("src", "Icon/light.png");
             i = 1;
 
         }
@@ -21,7 +21,7 @@ $(document).ready(function () {
             $(".search_container").css("color", "black");
             $(".bw").css("color", "grey");
 
-            $(".theme, img").find("img").attr("src", "icon/dark.png");
+            $(".theme, img").find("img").attr("src", "Icon/dark.png");
 
 
             i = 0;
@@ -95,7 +95,7 @@ function SearchPhoto(pgno1) {
 
                         <img src="${photo.urls.regular}" > 
 
-                                <a href="${photo.links.download}&force=true"><img src="icon/downloadw.png"></a>
+                                <a href="${photo.links.download}&force=true"><img src="Icon/downloadw.png"></a>
                         
                                 <b>❤️${photo.likes}</b>
                          
