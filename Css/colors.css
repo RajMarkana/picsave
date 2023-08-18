@@ -339,15 +339,6 @@ input[type=range]::-webkit-slider-thumb {
     .color {
         width: 22pc;
     }
-    .color-swatch {
-        width: 20px;
-        height: 250px;
-        
-        border-radius: 20px;
-        margin: 10px;
-        transition: .5s;
-        
-      }
 
     .color h1 {
         width: fit-content;
