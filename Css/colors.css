@@ -41,6 +41,7 @@ header {
     height: auto;
     background: linear-gradient(to top left, #30b4f5, #39f3bb);
     color: white;
+   
 }
 
 header .logo img {
@@ -180,6 +181,10 @@ input[type=range]::-webkit-slider-thumb {
 
     margin-top: 5pc;
     border-bottom: 2px solid gray;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    
 
 }
 
